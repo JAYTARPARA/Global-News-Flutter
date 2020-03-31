@@ -1,0 +1,12 @@
+keytool -genkey -v -keystore global-news.jks -alias globalnews -keyalg RSA -keysize 2048 -validity 10000
+
+splits {
+	abi {
+		enable true
+		reset()
+		include 'armeabi-v7a', 'arm64-v8a'
+		universalApk true
+	}
+}
+
+flutter build apk --split-per-abi
