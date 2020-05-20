@@ -9,4 +9,6 @@ splits {
 	}
 }
 
+keytool -genkey -v -keystore global-news-new.jks -alias globalnewsnew -keyalg RSA -keysize 2048 -validity 10000
+
 flutter build apk --split-per-abi

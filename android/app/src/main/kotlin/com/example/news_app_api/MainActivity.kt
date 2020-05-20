@@ -1,4 +1,4 @@
-package app.globalnews.iof
+package app.globalnews.jaytarpara
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity
